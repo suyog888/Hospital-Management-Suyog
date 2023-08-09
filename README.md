@@ -42,7 +42,8 @@ Server: Spring boot, Java,Hibernate
 11 Doctor Dashboard with patient list
 ![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/17a479b6-5e77-42d6-b6ca-e9f1aafd4f8b)
 12 Patient Booking Status
-![Uploading image.png…]()
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/c18b7b8f-38c3-49a0-b877-f02134300ccf)
+
 
 
 
