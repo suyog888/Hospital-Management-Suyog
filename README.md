@@ -19,7 +19,14 @@ Server: Spring boot, Java,Hibernate
 # Screenshots
 
 1 Home Page of the Application:
-![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/55ff7cd3-df36-445d-bd2a-137f5bc42c01)
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/66945258-7f61-4622-ade8-ad00ab3cd395)
+2 About us page
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/1a077cd1-3338-4a0f-af3c-cd91cc553ecc)
+3 Admin Login page
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/26bdb969-937d-4fad-81eb-ddc2ce945bea)
+4 Doctor LogIn page
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/5bfd0457-02bb-43eb-ad2f-a1752bcd4b93)
+
 
 
 # Development server
