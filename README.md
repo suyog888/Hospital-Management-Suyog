@@ -19,7 +19,8 @@ Server: Spring boot, Java,Hibernate
 # Screenshots
 
 1 Home Page of the Application:
-![Uploading image.png…]()
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/55ff7cd3-df36-445d-bd2a-137f5bc42c01)
+
 
 # Development server
 Run  `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files
