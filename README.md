@@ -18,4 +18,6 @@ Sprinboot is used as a middleware for database connection and api generation. My
 
 # Screenshots
 
-##1 Home Page of the Application:
+###1 Home Page of the Application:
+# Development server
+Run  `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files
