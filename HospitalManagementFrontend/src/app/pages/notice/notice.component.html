@@ -1,0 +1,49 @@
+
+<div class="bootstrap-wrapper" >
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <div class="container text-centre">
+                    <img src="../../assets/adminlogo.png" height="100px" alt="">
+                </div>
+                <h1 class="text-centre">Add notice</h1>
+               <!--{{admin | json}}-->
+               <form (ngSubmit)="formSubmit()">
+                <!--username-->
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Notice Title</mat-label>
+                    <input 
+                    [(ngModel)]="notice.noticeTitle"
+                    name="title"
+                    required
+                   
+                    matInput placeholder="Enter here">
+                  </mat-form-field>
+
+                
+
+                  
+
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Discription</mat-label>
+                    <textarea matInput [(ngModel)]="notice.noticeDis" name="dis"></textarea>
+                  </mat-form-field>
+
+               
+
+                  
+                  <div class="container text-centre">
+                    <button 
+                    
+                    type="submit
+                    " mat-raised-button color="primary">Submit</button>
+                    <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+                  </div>
+
+            </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,368 @@
+<!-- <mat-progress-spinner mode="determinate">f</mat-progress-spinner>
+<mat-spinner></mat-spinner> -->
+
+<div class="container">
+  <button routerLink="/patientsignup" id="btn2">
+  <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person_add" id="btn3"></mat-icon></button>
+  <hr>
+<!-- <div class="container mt-4" >
+ 
+    <div class="card">
+            <h1>Doctor Registation</h1>
+     
+    <form>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" [(ngModel)]="
+          firstName" [ngModelOptions]="{standalone: true}"  
+          class="form-control" id="name" placeholder="Enter Name">
+     
+        </div>
+     
+        <div class="form-group">
+            <label>last name</label>
+            <input type="text" [(ngModel)]="lastName"
+             [ngModelOptions]="{standalone: true}"  
+             class="form-control" id="last name" placeholder="Enter address">
+      
+          </div>
+     
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" [(ngModel)]="username" 
+            [ngModelOptions]="{standalone: true}"
+             class="form-control" id="username" 
+             placeholder="Enter username">
+      
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" [(ngModel)]="
+            email" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="email" placeholder="abc@gmail.com">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="number" [(ngModel)]="
+            phone" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="phone" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" [(ngModel)]="
+            city" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="city" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Pincode</label>
+            <input type="number" [(ngModel)]="
+            pincode" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="pincode" placeholder="411041">
+       
+          </div>
+
+          <div class="form-group">
+            <label>password</label>
+            <input type="password" [(ngModel)]="
+            password" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="password" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Salary</label>
+            <input type="number" [(ngModel)]="
+            salary" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="salary" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Qualification</label>
+            <input type="text" [(ngModel)]="
+            qualification" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="qualification" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Date of birth</label>
+            <input type="date" [(ngModel)]="
+            dob" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="dob" placeholder="Enter Name">
+       
+          </div>
+
+
+          <div class="form-group">
+            <label>Experience</label>
+            <input type="number" [(ngModel)]="
+            experience" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="experience" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Specialty</label>
+            <input type="text" [(ngModel)]="
+            specialty" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="specialty" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Blood group</label>
+            <input type="text" [(ngModel)]="
+            bloodGroup" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="bloodGroup" placeholder="Enter Name">
+       
+          </div>
+
+          <div class="form-group">
+            <label>Gender</label>
+            <input type="text" [(ngModel)]="
+            gender" [ngModelOptions]="{standalone: true}"  
+            class="form-control" id="gender" placeholder="Enter Name">
+       
+          </div>
+        
+        <button type="submit" class="btn btn-primary mt-4" (click)="save()" >Submit</button>
+      </form>
+    </div>
+    <div> -->
+     
+     
+        <div class="container mt-4" >
+     
+            <h1>Patient Table</h1>
+     
+     
+     
+     
+        <table class="table" style="border: solid black 1px; font-family: 'Courier New', Courier, monospace; border-radius: 50%;" >
+            <thead>
+             <h1 *ngIf="!isResultLoaded">Loading.................</h1>
+            
+            <tr>
+              
+                <th scope="col"> Patient ID</th>
+                <th scope="col">First Name</th>
+                <th scope="col">last Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Status</th>
+                <th scope="col" colspan="3" style="text-align: center;">Option</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let PatientItem of PatientArray" >
+     
+                <th scope="row">{{PatientItem.patientId  }}</th>
+                <td>{{PatientItem.firstName  | uppercase}}</td>
+                <td>{{PatientItem.lastName }}</td>
+                <td>{{PatientItem.username }}</td>
+                <td>{{PatientItem.status}}</td>
+     
+                <td>
+                  <button  class="btn btn-success" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2" (click)="setUpdate(PatientItem)">Edit</button>
+                  </td>
+                  <td>
+                  <button type="button" class="btn btn-danger" (click)="setDelete(PatientItem)">Delete</button>
+                  </td>
+                  <td>
+                  <!-- <button  class="btn btn-success" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2" (click)="setUpdate(PatientItem)">View</button> -->
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+     
+     
+        </div>
+
+
+
+          <!-- Modal 2-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container mt-4" >
+ 
+            <div class="card">
+                    <h1>Doctor Registation</h1>
+             
+            <form>
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" [(ngModel)]="
+                  firstName" [ngModelOptions]="{standalone: true}"  
+                  class="form-control" id="name" placeholder="Enter Name">
+             
+                </div>
+             
+                <div class="form-group">
+                    <label>last name</label>
+                    <input type="text" [(ngModel)]="lastName"
+                     [ngModelOptions]="{standalone: true}"  
+                     class="form-control" id="last name" placeholder="Enter address">
+              
+                  </div>
+             
+                  <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" [(ngModel)]="username" 
+                    [ngModelOptions]="{standalone: true}"
+                     class="form-control" id="username" 
+                     placeholder="Enter username">
+              
+                  </div>
+                  <div class="form-group">
+                      <label>password</label>
+                      <input type="password" [(ngModel)]="
+                      password" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="password" placeholder="Enter Name">
+                 
+                    </div>
+                    <div class="form-group">
+                      <label>Date of birth</label>
+                      <input type="date" [(ngModel)]="
+                      dob" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="dob" placeholder="Enter Name">
+                 
+                    </div>
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" [(ngModel)]="
+                    email" [ngModelOptions]="{standalone: true}"  
+                    class="form-control" id="email" placeholder="abc@gmail.com">
+               
+                  </div>
+                  <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="number" [(ngModel)]="
+                    phone" [ngModelOptions]="{standalone: true}"  
+                    class="form-control" id="phone" placeholder="Enter Name">
+               
+                  </div>
+
+                  <div class="form-group">
+                      <label>Address</label>
+                      <input type="text" [(ngModel)]=
+                      "address" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="address" placeholder="Enter Address ">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>Insurance Provider name</label>
+                      <input type="text" [(ngModel)]=
+                      "insuranceProvider" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="insuranceProvider" placeholder="Enter Insurance Provider Name ">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>Policy Id</label>
+                      <input type="number" [(ngModel)]=
+                      "policyId" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="policyId" placeholder="Enter policy Id ">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>Reason</label>
+                      <input type="text" [(ngModel)]=
+                      "reason" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="reason" placeholder="Enter reason ">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>Date & TIme</label>
+                      <input type="datetime" [(ngModel)]=
+                      "dateAndTime" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="dateAndTime" placeholder="Enter Date & TIme">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>History</label>
+                      <input type="text" [(ngModel)]=
+                      "history" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="history" placeholder="Enter History ">
+                 
+                    </div> 
+
+                    <div class="form-group">
+                      <label>Emergency Contact Number</label>
+                      <input type="number" [(ngModel)]=
+                      "emergencyContact" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="emergencyContact" placeholder="Enter Emergency Contact Number">
+                 
+                    </div>
+
+                    <div class="form-group">
+                      <label>Register Date</label>
+                      <input type="datetime-local" [(ngModel)]=
+                      "regiDate" [ngModelOptions]="{standalone: true}"  
+                      class="form-control" id="regiDate" >
+                 
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                 
+        
+                  <div class="form-group">
+                    <label>Blood group</label>
+                    <input type="text" [(ngModel)]="
+                    bloodGroup" [ngModelOptions]="{standalone: true}"  
+                    class="form-control" id="bloodGroup" placeholder="Enter Name">
+               
+                  </div>
+        
+                  <div class="form-group">
+                    <label>Gender</label>
+                    <input type="text" [(ngModel)]="
+                    gender" [ngModelOptions]="{standalone: true}"  
+                    class="form-control" id="gender" placeholder="Enter Name">
+               
+                  </div>
+                  <div class="form-group">
+                    <label>Status</label>
+                    <input type="text" [(ngModel)]="
+                    status" [ngModelOptions]="{standalone: true}"  
+                    class="form-control" id="status" placeholder="null">
+               
+                  </div>
+                
+                <button type="submit" class="btn btn-primary mt-4" (click)="save()" >Submit</button>
+              </form>
+            </div>
+            <div>
+           
+  
+     
+        </div>
+       
+      </div>
+    </div>
+  </div>

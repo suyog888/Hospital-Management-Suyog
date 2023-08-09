@@ -1,0 +1,190 @@
+<div class="container">
+  <button routerLink="/doctorsignup" id="btn2">
+  <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person_add" id="btn3"></mat-icon></button>
+  
+  </div>
+  <div class="grid">
+      <div class="container">
+        <h1>Welcome To Admin Dashboard</h1>
+        <a style="color: rgb(86, 86, 86); font-size: x-large;"><marquee behavior="scroll" direction="left">
+          Welcome to Dashboard. Please find the doctor list available below!!. Click Add doctor   to Add doctor, Click View Medicines to view and update Medicines</marquee></a>
+        <hr>
+         
+      
+      <br>
+      <a style="color: rgb(86, 86, 86); font-size: xx-large;">Doctor List in your Queue</a>
+      <div class="tableFixHead">
+        <br>
+        <table class="table table-striped">
+        <thead class="table-header">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone No</th>
+            
+            
+            
+            <th>Gender</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let doctorData of doctor">
+            <td>{{doctorData.doctorId}}</td>
+            <td>{{doctorData.firstName}}</td>
+            <td>{{doctorData.username}}</td>
+            <td>{{doctorData.phone}}</td>
+            
+            
+            
+            <td>{{doctorData.gender}}</td>
+            <td>
+              <button class="btn btn-info" routerLink="/doctorUpdate">Update</button>
+              <button (click)="deletedoctorDetails(doctorData.doctorId)" class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+              <button  class="btn btn-success" style="margin-left: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+      </div>
+      </div>
+  
+  
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit doctor information</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>hiiii</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary"(click)="doSomething()">do something</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+  
+      <!-- Modal 2-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">register here</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form >
+            <!--email-->
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Gendre</mat-label>
+              <input
+              required
+             
+              name="Gendre"   
+              type="text" matInput placeholder="abc@gmail.com">
+            </mat-form-field>
+            <div class="container text-centre">
+              <button 
+              
+              type="submit
+              " mat-raised-button color="primary">Submit</button>
+              <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+            </div>
+  
+      </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+				

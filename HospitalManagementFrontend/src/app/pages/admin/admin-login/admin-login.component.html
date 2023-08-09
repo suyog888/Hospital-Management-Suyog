@@ -1,0 +1,67 @@
+
+<div class="bootstrap-wrapper" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row" style="margin-top: -18px;">
+            <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <div class="container text-centre">
+                    <img src="../../assets/adminlogo.png" height="100px" alt="">
+                </div>
+                <h1 class="text-centre"> Admin Login</h1>
+               <!--{{admin | json}}-->
+                <form >
+                    <!--username-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input type="text"
+                        [(ngModel)]="username" [ngModelOptions]="{standalone: true}"
+                        
+                        
+                        required
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input type="password" 
+                        [(ngModel)]="password" [ngModelOptions]="{standalone: true}"
+                        
+                        
+                        required
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+                      <div class="container text-centre">
+                        <button 
+                        
+                        type="submit
+                        " mat-raised-button color="primary" (click)="Login()">Submit</button>
+                        <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+                      </div>
+
+                </form>
+                </mat-card>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <h2>user details</h2>
+
+<h2>User Details</h2>
+<div *ngIf="adminrecord">
+  <p>ID: {{ adminrecord.id }}</p>
+  <p>Name: {{ adminrecord.name }}</p>
+  <p>Email: {{ adminrecord.email }}</p>
+   Add more properties as needed 
+</div> -->

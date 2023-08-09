@@ -1,0 +1,172 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <div class="container text-centre">
+                    <img src="../../assets/adminlogo.png" height="100px" alt="">
+                </div>
+                <h1 class="text-centre">Edit Details</h1>
+                <!-- {{doctor | json}}  
+                <form (ngSubmit)="formSubmit()">
+                   <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>userid</mat-label>
+                    <input 
+                    [(ngModel)]="doctor.doctorId"
+                    name="doctorId"
+                    required
+                   
+                    matInput placeholder="Enter here">
+                  </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        [(ngModel)]="doctor.username"
+                        name="username"
+                        required
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                     <mat-form-field class="full-width " appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input  
+                        [(ngModel)]="doctor.password"
+                        name="password"
+                        required
+                        type="password" 
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                      
+                         <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>gender</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.gender"
+                          name="gender"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+
+
+
+
+                      
+                      <div class="container text-centre">
+                        <button 
+                        
+                        type="submit
+                        " mat-raised-button color="primary">update</button>
+                        <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+                      </div>
+
+                </form> -->
+
+                {{doctor2 | json}} 
+                let doctorData of doctor3
+                
+                <form >
+                  
+                   <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>userid</mat-label>
+                    <input 
+                    
+
+                    [(ngModel)]="doctor2.doctorId"
+                    name="doctorId"
+                    required
+                    matInput placeholder=doctorData.doctorId>
+                  </mat-form-field>
+                    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        [(ngModel)]="doctor2.username"
+                        name="username"
+                        required
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                    
+                     <mat-form-field class="full-width " appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input  
+                        [(ngModel)]="doctor2.password"
+                        name="password"
+                        required
+                        type="password" 
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                      
+                       
+                         <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>gender</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor2.gender"
+                          name="gender"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+
+
+
+
+                      
+                      <div class="container text-centre">
+                        <button 
+                        
+                        type="submit
+                        " mat-raised-button color="primary">update</button>
+                        <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+                      </div>
+
+                </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- Modal 2-->
+ <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Info</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <!--email-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Gendre</mat-label>
+            <input
+            required
+          
+            name="Gendre"   
+            type="text" matInput placeholder="abc@gmail.com">
+          </mat-form-field>
+          <div class="container text-centre">
+            <button 
+            
+            type="submit
+            " mat-raised-button color="primary">Submit</button>
+            <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+          </div>
+
+    </form>
+      </div>
+     
+    </div>
+  </div>
+</div>

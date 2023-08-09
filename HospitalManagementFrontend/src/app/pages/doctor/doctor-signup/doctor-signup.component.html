@@ -1,0 +1,220 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <div class="container text-centre">
+                    <img src="../../assets/adminlogo.png" height="100px" alt="">
+                </div>
+                <h1 class="text-centre">Add Doctor</h1>
+                <!-- {{doctor | json}}  -->
+                <form (ngSubmit)="formSubmit()">
+            
+                    <!--username-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        [(ngModel)]="doctor.username"
+                        name="username"
+                        required
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                     <!--password -->
+                     <mat-form-field class="full-width " appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input  
+                        [(ngModel)]="doctor.password"
+                        name="password"
+                        required
+                        type="password" 
+                       
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+
+                      <!--first name-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input 
+                        required
+                        [(ngModel)]="doctor.firstName"
+                        name="firstName"
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+                      <!--Last name-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input
+                        required
+                        [(ngModel)]="doctor.lastName"
+                        name="lastName"
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+                      <!--email-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input
+                        required
+                        [(ngModel)]="doctor.email"
+                        name="email"   
+                        type="email" matInput placeholder="abc@gmail.com">
+                      </mat-form-field>
+                      <!--Mobile-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone No</mat-label>
+                        <input
+                        required
+                        [(ngModel)]="doctor.phone"
+                        name="phone"
+                        type="number" matInput placeholder="Enter here">
+                      </mat-form-field>
+                      <!--city-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input
+                        required
+                        [(ngModel)]="doctor.city"
+                        name="city"
+                        matInput placeholder="Enter here">
+                      </mat-form-field>
+                        <!--pincode-->
+                        <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>Pin code</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.pinCode"
+                          name="pinCode"
+                          
+                          type="number" matInput placeholder="Enter here">
+                        </mat-form-field>
+
+                        <!--salary-->
+                        <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>salary</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.salary"
+                          name="salary"
+                          
+                          type="number" matInput placeholder="Enter here">
+                        </mat-form-field>
+                       
+                        <!--qualification-->
+                        <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>qualification</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.qualification"
+                          name="qualification"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+                          <!--dob-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>dob</mat-label>
+                        <input 
+                        required
+                        [(ngModel)]="doctor.dob"
+                        name="dob"
+                        
+                        type="date" matInput placeholder="Enter here">
+                      </mat-form-field>
+                        <!--bloodGroup-->
+                        <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>bloodGroup</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.bloodGroup"
+                          name="bloodGroup"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+                          <!--experience-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>experience</mat-label>
+                        <input 
+                        required
+                        [(ngModel)]="doctor.experience"
+                        name="pinCode"
+                        
+                        type="number" matInput placeholder="Enter here">
+                      </mat-form-field>
+                        <!--specialty-->
+                        <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>specialty</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.specialty"
+                          name="specialty"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+
+                         <!--gender-->
+                         <mat-form-field class="full-width" appearance="outline">
+                          <mat-label>gender</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="doctor.gender"
+                          name="gender"
+                          
+                          type="text" matInput placeholder="Enter here">
+                        </mat-form-field>
+
+
+
+
+                      
+                      <div class="container text-centre">
+                        <button 
+                        
+                        type="submit
+                        " mat-raised-button color="primary">Add</button>
+                        <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+                      </div>
+
+                </form>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+ <!-- Modal 2-->
+ <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Update Info</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <!--email-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Gendre</mat-label>
+            <input
+            required
+           
+            name="Gendre"   
+            type="text" matInput placeholder="abc@gmail.com">
+          </mat-form-field>
+          <div class="container text-centre">
+            <button 
+            
+            type="submit
+            " mat-raised-button color="primary">Submit</button>
+            <button type="reset" style="margin-left: 10px;" mat-raised-button color="accent">Clear</button>
+          </div>
+
+    </form>
+      </div>
+     
+    </div>
+  </div>
+</div>

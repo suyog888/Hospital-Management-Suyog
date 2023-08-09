@@ -1,0 +1,38 @@
+
+       
+       
+        <div class="container mt-4" >
+       
+            <h1>Notice Board</h1>
+     
+     
+     
+     
+        <table class="table full-width"  style="border: solid black 1px; font-family: 'Courier New', Courier, monospace; border-radius: 50%;" >
+            <thead>
+             <h1 *ngIf="!isResultLoaded">Loading.................</h1>
+            
+            <tr>
+              
+                <th scope="col"><b> Notice ID</b></th>
+                <th scope="col"> Notice Title</th>
+                <th scope="col">Discription</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let NoticeItem of NoticeArray">
+     
+                <th scope="row">{{NoticeItem.noticeId  }}</th>
+                <td>{{NoticeItem.noticeTitle}}</td>
+                <td>{{NoticeItem.noticeDis }}</td>
+               
+              </tr>
+              
+            </tbody>
+          </table>
+     
+     
+        </div>
+
+
