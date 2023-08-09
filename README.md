@@ -1,4 +1,4 @@
-Hospital Management System Project
+**Hospital Management System Project**
 The Hospital Management Application is built with Angular and Springboot. The primary objective of the project is to design and develop a hospital management website which can be accessed by the doctor and admin.
 
 The doctor has the authority to view the current list of patients who are under treatment, including their diagnostic details. The doctor can perform CRUD operations with the patients in his dashboard. Doctor has the access to add and maintain the medicine list in his dashboard.
