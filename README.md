@@ -27,6 +27,26 @@ Server: Spring boot, Java,Hibernate
 4 Doctor LogIn page
 ![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/5bfd0457-02bb-43eb-ad2f-a1752bcd4b93)
 
+5 Admin Dashboard 1
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/43771faf-9cf7-44cb-8950-83b75f614ac3)
+6 Admin Dashboard with Doctor List
+
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/d126946f-cc36-4823-bf51-8b0e4dd4c8da)
+7 Admin Dashboard with update doctor
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/51b87b05-eda7-42e6-9e9a-ee28562cc634)
+8 Admin Dashboard with Patient list
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/72211f50-b2e8-4c8c-8089-83d991fb5889)
+
+10 Doctor Dashboard with notice
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/5c4f255d-56cd-42ab-af5e-e652121273c2)
+11 Doctor Dashboard with patient list
+![image](https://github.com/suyog888/Hospital-Management-Suyog/assets/102501989/17a479b6-5e77-42d6-b6ca-e9f1aafd4f8b)
+12 Patient Booking Status
+![Uploading image.png…]()
+
+
+
+
 
 
 # Development server
